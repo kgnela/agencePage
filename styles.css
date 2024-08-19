@@ -1,0 +1,392 @@
+@font-face {
+    font-family: 'Tan Pearl';
+    src: url('fonts/tan-pearl.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #8a8a8a;
+    background-color: #f5f5f5;
+}
+
+
+.header-text {
+    font-size: 10rem;  
+    font-weight: bold;
+    font-family: 'Tan Pearl';
+}
+
+.header-section-text {
+    font-size: 3rem;  
+    font-weight: bold;
+    font-family: 'Tan Pearl';
+}
+.about-item-header {
+    font-weight: bold;
+    font-family: 'Tan Pearl';
+}
+header {
+    background-image: url('wizerunkowa-69.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative; /* Dodano do umożliwienia absolutnego pozycjonowania strzałki */
+}
+
+.scroll-down {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.arrow {
+    width: 30px;
+    height: 30px;
+    border: solid white;
+    border-width: 0 3px 3px 3px;
+    border-radius: 2px;
+    transform: rotate(45deg);
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0) rotate(45deg); }
+    50% { transform: translateY(10px) rotate(45deg); }
+    100% { transform: translateY(0) rotate(45deg); }
+}
+
+.hero {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background: #e67e22;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none; /* Usuwa ramkę */
+    cursor: pointer; /* Zmienia kursor na wskaźnik */
+
+}
+.cta-button:hover {
+    background-color: #914300;
+}
+
+
+.section {
+    padding: 50px 20px;
+    text-align: center;
+}
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-item {
+    display: flex;
+    width: 90%;
+    margin-bottom: 40px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    max-width: 900px;
+}
+
+.about-item img {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    object-fit: cover;
+    margin: 0 20px;
+}
+
+.about-item:nth-child(odd) {
+    flex-direction: row;
+}
+
+.about-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.about-description {
+    flex: 1;
+    max-width: 45%;
+    text-align: left;
+    line-height: 1.6;
+    padding: 0 20px;
+}
+
+.about-item:nth-child(even) .about-description {
+    text-align: right;
+}
+
+.services {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto; 
+}
+
+.service {
+    width: 30%;
+    margin: 20px 0;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.social-icon {
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #8a8a8a;
+}
+
+.social-icon:hover {
+    color: #c13584;
+}
+
+.offer-text {
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+/* Ogólne poprawki dla urządzeń mobilnych */
+@media (max-width: 768px) {
+    /* Zmniejsz rozmiar tekstu nagłówka */
+    .header-text {
+        font-size: 3rem;
+    }
+
+    /* Spraw, aby sekcja "hero" była bardziej kompaktowa */
+    .hero {
+        margin: 20px 0;
+    }
+
+    /* Dostosuj układ sekcji "O nas" */
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-item {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .about-description {
+        max-width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+    .about-item img {
+        width: 200px;
+        height: 200px;
+        margin: 20px 0;
+    }
+
+    /* Ułóż sekcje oferty pionowo */
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    /* Dostosuj przycisk CTA */
+    .cta-button {
+        padding: 15px 30px;
+        font-size: 1.2em;
+    }
+    
+    /* Zmniejsz odstępy w sekcjach */
+    .section {
+        padding: 30px 10px;
+    }
+
+    /* Dostosuj stopkę dla mniejszych ekranów */
+    footer {
+        padding: 20px 0;
+        font-size: 0.9em;
+    }
+}
+
+
+
+.contact-container {
+    width: 60%;
+    margin: 0 auto; 
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contact-details {
+    flex: 1;
+    text-align: left;
+    text-align: center;
+
+}
+
+.contact-info {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.contact-image {
+    flex: 1;
+    text-align: right;
+}
+
+.contact-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.contact-section h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.contact-section h2 {
+    font-size: 24px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.contact-section p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Wyśrodkowuje elementy poziomo */
+
+}
+
+.form-row input,
+.form-row select,
+.form-row textarea {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-row input:focus,
+.form-row select:focus,
+.form-row textarea:focus {
+    border-color: #e67e22;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+
+.privacy-note {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #777;
+}
+
+.privacy-note a {
+    color: #7a5cff;
+    text-decoration: none;
+}
+
+.privacy-note a:hover {
+    text-decoration: underline;
+}
+
+.contact-form .input,
+.contact-form textarea {
+    border-radius: 30px; 
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    color: #8a8a8a;
+}
+
+
+.contact-form ::placeholder{
+    padding-left: 10px;
+    font-family: 'Poppins', sans-serif;
+    color: #d3d3d3;
+    font-size: 0.9rem;  
+
+}
+
+.contact-form .cta-button {
+    border-radius: 8px; 
+    text-align: center;
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agencja Marketingowa XYZ</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="hero">
+            <div class="header-text">Photo&reels</div>
+            <div class="offer-text">
+                <p>Tworzymy harmonijny feed, który wzmocni wizerunek Twojej marki i wyróżni ją na tle konkurencji. Dzięki naszym umiejętnościom fotograficznym i video, zyskujesz profesjonalne i angażujące treści na swoje konto. Zwiększ swoją obecność w sieci i podnieś standardy swojej firmy.</p>
+                <br>
+                <a href="#contact" class="cta-button">Skontaktuj się z nami</a>
+            </div>
+            
+        </div>
+        <div class="scroll-down" onclick="scrollToNextSection()">
+            <div class="arrow"></div>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <h1 class="header-section-text">O nas</h1>
+        <div class="about-container">
+            <div class="about-item">
+                <img src="woman1.jpg" alt="Kobieta 1">
+                <div class="about-description">
+                    <h3 class="about-item-header">Natalia Kural</h3>
+                    <p>Od 4 lat zajmuję się fotografią rodzinną oraz wizerunkową. Moje prace cechują się naturalnością i autentycznością. Uwielbiam tworzyć spójne, estetyczne prace.</p>
+                    <a href="https://www.instagram.com/fotografia.nataliakural/" target="_blank" class="social-icon">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.instagram.com/fotografia.nataliakural/" target="_blank" class="social-icon">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="about-item">
+                <img src="woman2.jpg" alt="Kobieta 2">
+                <div class="about-description">
+                    <h3 class="about-item-header">Joanna Klecka</h3>
+                    <p>Tworzeniem i pracą w social mediach zajmuję się 2 lata. Specjalizuję się w nagrywaniu rolek, tak by angażowały i budowały społeczność na platformach internetowych.</p>
+                        <a href="https://www.instagram.com/joannaklecka_sm/" target="_blank" class="social-icon">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <section id="services" class="section">
+        <h1 class="header-section-text">Nasza oferta</h1>
+        <div class="offer-text">
+            <h3>Zajmujemy się całościowym zarządzaniem profilami, od planowania strategii, przez tworzenie unikalnych treści. Dzięki naszemu doświadczeniu i kreatywności pomagamy firmom wyróżnić się na tle konkurencji i osiągać swoje cele marketingowe. W naszej ofercie znajdziesz dwie propozycje współpracy:</h3>
+        </div>
+        <div class="services">
+            <div class="service">
+                <h3 class="about-item-header">Podstawowa</h3>
+                <p> - Audyt konta (bio)<br> - 3 rolki (scenariusz, montaż, dobór muzyki komercyjnej)<br><br>Cena: 600 zł</p>
+
+            </div>
+            <div class="service">
+                <h3 class="about-item-header">Kompleksowa</h3>
+                <p> - Audyt konta<br> - Stworzenie/uaktualnienie bazy zapisanych relacji wraz z okładkami (o nas, opinie, oferta)<br> - Stworzenie unikalnej identyfikacji profilu<br> - Sesja zdjęciowa/wizerunkowa i nagrania na potrzeby marketingowe<br> - Scenariusz i organizacja sesji<br> - Spójny feed obejmujący: 7 postów + 2 rolki, opisy, dobór hasztagów, montaż<br><br>Cena: 1200 zł</p>
+            </div>
+            <div class="service">
+                <h3 class="about-item-header">Dodatkowe usługi</h3>
+                <p> - sesja zdjęciowa/wizerunkowa <br>25 wybranych ujęć (800 zł) <br> - 1 rolka (250 zł)<br> </p>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="section">
+        <h1 class="header-section-text">Kontakt</h1>
+    
+        <div class="contact-container">
+            <div>
+            <h2 class="about-item-header">Napisz i umów się na spotkanie!</h2>
+        
+            <form action="#" method="POST" class="contact-form">
+                <div class="form-row">
+                    <input type="text"  class="input"  name="first_name" placeholder="Imię*" required>
+                    <input type="text"   class="input"  name="last_name" placeholder="Nazwisko*" required>
+                </div>
+                <div class="form-row">
+                    <input type="email" class="input" name="email" placeholder="Adres email*" required>
+                </div>
+                <div class="form-row">
+                    <textarea name="message" placeholder="Wiadomość" required></textarea>
+                </div>
+                <div>
+                    <button  class="cta-button">Wyślij</button>
+                </div>
+            </form>
+        
+            <p class="privacy-note">
+                We will store and process your personal data on terms defined <a href="#">here</a>.
+            </p>
+        </div>
+            <div class="contact-image">
+                <!-- Dodaj tutaj zdjęcie kontaktowe -->
+                <img src="razem.jpg" alt="Zdjęcie kontaktowe">
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Agencja Marketingowa XYZ. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+
+    <script>
+        function scrollToNextSection() {
+            const sections = document.querySelectorAll('section');
+            const currentPosition = window.scrollY + window.innerHeight;
+            let nextSection = null;
+
+            for (let i = 0; i < sections.length; i++) {
+                const sectionTop = sections[i].offsetTop;
+                const sectionBottom = sectionTop + sections[i].offsetHeight;
+
+                if (currentPosition < sectionBottom) {
+                    nextSection = sections[i];
+                    break;
+                }
+            }
+
+            if (nextSection) {
+                window.scrollTo({
+                    top: nextSection.offsetTop,
+                    behavior: 'smooth'
+                });
+            }
+        }
+    </script>
+</body>
+</html>
+
