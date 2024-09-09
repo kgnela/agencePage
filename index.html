@@ -24,6 +24,7 @@
         </div>
     </header>
 
+
     <section id="about" class="section">
         <h1 class="header-section-text">O nas</h1>
         <div class="about-container">
@@ -53,12 +54,56 @@
             </div>
         </div>
         
+
+        <div class="carousel-container">
+            <button class="carousel-btn prev-btn">&#10094;</button>
+    
+            <div class="carousel">
+                <div class="carousel-element">
+                    <div class="about-item">
+                        <img src="woman1.jpg" alt="Kobieta 1">
+                        <div class="about-description">
+                            <h3 class="about-item-header">Natalia Kural</h3>
+                            <p>Od 4 lat zajmuję się fotografią rodzinną oraz wizerunkową. Moje prace cechują się naturalnością i autentycznością. Uwielbiam tworzyć spójne, estetyczne prace.
+                            </p>
+                            <a href="https://www.instagram.com/fotografia.nataliakural/" target="_blank" class="social-icon">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.instagram.com/fotografia.nataliakural/" target="_blank" class="social-icon">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </div>
+                    </div>                </div>
+                <div class="carousel-element">
+                    <div class="about-item">
+                        <img src="woman2.jpg" alt="Kobieta 2">
+                        <div class="about-description">
+                            <h3 class="about-item-header">Joanna Klecka</h3>
+                            <p>Tworzeniem i pracą w social mediach zajmuję się 2 lata. Specjalizuję się w nagrywaniu rolek, tak by angażowały i budowały społeczność na platformach internetowych.</p>
+                                <a href="https://www.instagram.com/joannaklecka_sm/" target="_blank" class="social-icon">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>                </div>
+            </div>
+    
+            <button class="carousel-btn next-btn">&#10095;</button>
+        </div>
+    
+        <div class="carousel-dots">
+            <span class="dot" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+        </div>
+
+
     </section>
+
 
     <section id="services" class="section">
         <h1 class="header-section-text">Nasza oferta</h1>
         <div class="offer-text">
-            <h3>Zajmujemy się całościowym zarządzaniem profilami, od planowania strategii, przez tworzenie unikalnych treści. Dzięki naszemu doświadczeniu i kreatywności pomagamy firmom wyróżnić się na tle konkurencji i osiągać swoje cele marketingowe. W naszej ofercie znajdziesz dwie propozycje współpracy:</h3>
+            <p>Zajmujemy się całościowym zarządzaniem profilami, od planowania strategii, przez tworzenie unikalnych treści. Dzięki naszemu doświadczeniu i kreatywności pomagamy firmom wyróżnić się na tle konkurencji i osiągać swoje cele marketingowe. W naszej ofercie znajdziesz dwie propozycje współpracy:</p>
         </div>
         <div class="services">
             <div class="service">
@@ -104,7 +149,6 @@
             </p>
         </div>
             <div class="contact-image">
-                <!-- Dodaj tutaj zdjęcie kontaktowe -->
                 <img src="razem.jpg" alt="Zdjęcie kontaktowe">
             </div>
         </div>
@@ -113,30 +157,8 @@
         <p>&copy; 2024 Agencja Marketingowa XYZ. Wszelkie prawa zastrzeżone.</p>
     </footer>
 
-    <script>
-        function scrollToNextSection() {
-            const sections = document.querySelectorAll('section');
-            const currentPosition = window.scrollY + window.innerHeight;
-            let nextSection = null;
 
-            for (let i = 0; i < sections.length; i++) {
-                const sectionTop = sections[i].offsetTop;
-                const sectionBottom = sectionTop + sections[i].offsetHeight;
+        <script src="scripts/main.js"></script>
 
-                if (currentPosition < sectionBottom) {
-                    nextSection = sections[i];
-                    break;
-                }
-            }
-
-            if (nextSection) {
-                window.scrollTo({
-                    top: nextSection.offsetTop,
-                    behavior: 'smooth'
-                });
-            }
-        }
-    </script>
 </body>
 </html>
-
